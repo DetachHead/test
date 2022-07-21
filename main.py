@@ -16,6 +16,4 @@ print("hi")
 
 
 
-
-
 print("bye")
