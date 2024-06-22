@@ -9,4 +9,4 @@ jobs:
             fail-fast: false
         steps:
             - uses: actions/checkout@v4
-            - run: ./pw pdm install
+            - run: ./pw pip install nodejs-wheel-binaries
