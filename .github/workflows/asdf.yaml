@@ -9,4 +9,7 @@ jobs:
             fail-fast: false
         steps:
             - uses: actions/checkout@v4
-            - run: ./pw pip install nodejs-wheel-binaries
+            - run: ./pw pdm install
+            - uses: actions/upload-artifact@v4
+              with:
+                  path: C:/Users/runneradmi/AppData/Local/pdm/pdm/Logs
