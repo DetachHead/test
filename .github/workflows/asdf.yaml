@@ -13,4 +13,4 @@ jobs:
                 ./pw pdm info
                 ./pw pdm info --env
             - run: ./pw pdm install -v
-            - run: ./pw pdm add pytest==3.8
+            - run: ./pw pdm add pytest==3.8 -v
