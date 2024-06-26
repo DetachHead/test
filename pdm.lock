@@ -2,7 +2,7 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default", "docs", "test", "lint"]
+groups = ["default", "test", "docs", "lint"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.2"
 content_hash = "sha256:1f5d93364935cc752f1b7286d7b8b820a061bedf46f921fb39f5aa0d467b9cb0"
