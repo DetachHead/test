@@ -1,5 +1,5 @@
 [tool.pyprojectx]
-main = ["pdm"]
+main = ["pdm==2.16.0"]
 
 [tool.pdm]
 distribution = true
@@ -11,10 +11,8 @@ description = "Default template for PDM package"
 authors = [
     {name = "detachhead", email = "detachhead@users.noreply.github.com"},
 ]
-dependencies = [
-    "nodejs-wheel-binaries>=20.15.0",
-]
-requires-python = ">=3.12"
+dependencies = []
+requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
 

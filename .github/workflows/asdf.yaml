@@ -2,18 +2,15 @@ on: push
 
 jobs:
     foo:
-        runs-on: windows-latest
-        strategy:
-            matrix:
-                a: [1,2,3,4,5,6,7,8,9,0]
-            fail-fast: false
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
             - uses: actions/setup-python@v5
               with:
-                  python-version: '3.12' 
+                  python-version: '3.8' 
             - name: install pyprojectx & pdm and print env info
               run: |
                 ./pw pdm info
                 ./pw pdm info --env
             - run: ./pw pdm install -v
+            - run: ./pw pdm add pytest==3.8
